@@ -1,5 +1,6 @@
 import React from "react";
 import { Bell, NotebookPen, Search, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -41,10 +42,11 @@ export default function Navbar() {
         </button>
 
         {/* Post Button */}
-        <button className="btn btn-sm bg-white text-[#42365F] border-none hover:bg-gray-100 gap-2">
-          <NotebookPen size={16} />
-          <span className="hidden sm:inline">เพิ่มโพสต์</span>
-        </button>
+
+        <NotebookPen size={16} />
+        <Link to="/create" className="btn btn-primary">
+          เพิ่มโพสต์
+        </Link>
 
         {/* Notification */}
         <button className="btn btn-ghost btn-circle">

@@ -3,8 +3,6 @@ import Navbar from "../components/Navbar";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-base-200">
-      <Navbar />
-
       <div className="p-6 max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold mb-4">Home Page</h1>
 
